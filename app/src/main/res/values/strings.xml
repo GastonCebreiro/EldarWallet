@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">EldarWallet</string>
+
+    <string name="fragment_login_btn_login">INGRESAR</string>
+    <string name="fragment_login_btn_register">REGISTRARSE</string>
+    <string name="fragment_login_title">Eldar Wallet</string>
+    <string name="fragment_login_name_ask">Nombre</string>
+    <string name="fragment_login_lastname_ask">Apellido</string>
+    <string name="fragment_login_password_ask">Clave</string>
+
+    <string name="fragment_new_user_btn_register">REGISTRAR</string>
+    <string name="fragment_new_user_name_ask">Ingrese Nombre</string>
+    <string name="fragment_new_user_lastname_ask">Ingrese Apellido</string>
+    <string name="fragment_new_user_password_ask">Ingrese la clave</string>
+    <string name="fragment_new_user_btn_save">Guardar</string>
+
+    <string name="fragment_new_card_title">Nueva tarjeta</string>
+    <string name="fragment_new_card_card_number">Numero de tarjeta</string>
+    <string name="fragment_new_card_card_code">Codigo de seguridad</string>
+    <string name="fragment_new_card_expire_date">Fecha de Vencimiento</string>
+    <string name="fragment_new_card_date_format">MM/YY</string>
+    <string name="fragment_new_card_full_name">Nombre y Apellido</string>
+    <string name="fragment_new_card_btn_save">Guardar</string>
+
+    <string name="fragment_pay_card_title">Pago Tarjeta</string>
+    <string name="fragment_pay_card_number">5555 5555 5555 5555</string>
+    <string name="fragment_pay_expire_date">11/25</string>
+    <string name="fragment_pay_card_name">GASTON CEBREIRO</string>
+    <string name="fragment_pay_card_balance_zero">0.00</string>
+    <string name="fragment_pay_card_expire_title">Vto:</string>
+    <string name="fragment_pay_card_btn_pay">PAGAR</string>
+    <string name="fragment_pay_card_money_symbol">$</string>
+
+    <string name="fragment_pay_qr_title">Pago QR</string>
+    <string name="fragment_pay_qr_description">QR Content</string>
+
+
+    <string name="fragment_home_balance">SALDO: </string>
+    <string name="fragment_home_balance_zero">0.00</string>
+    <string name="fragment_home_btn_new_card">Agregar Tarjeta</string>
+    <string name="fragment_home_btn_pay_qr">Pagar con QR</string>
+    <string name="fragment_home_money_symbol">$</string>
+
+
+
+    <string name="error_msg_invalid_password">Clave Incorrecta</string>
+    <string name="error_msg_enter_password">Ingrese una clave</string>
+    <string name="error_msg_enter_name">Ingrese un nombre</string>
+    <string name="error_msg_enter_lastname">Ingrese un apellido</string>
+    <string name="error_msg_login_succesfull">Login Exitoso!</string>
+    <string name="error_msg_new_user_name">Ingrese un Nombre de Usuario</string>
+    <string name="error_msg_new_user_email">Ingrese un Mail Válido</string>
+    <string name="error_msg_new_user_password">Ingrese una Clave Numerica de 6 dígitos</string>
+    <string name="error_msg_new_user_register">Usuario Registrado!</string>
+    <string name="error_msg_new_user_not_found">El usuario no se encuentra registrado</string>
+    <string name="error_msg_unknown">Ha ocurrido un error: </string>
+
+    <string name="error_msg_enter_card_number">Ingrese un numero de tarjeta valido</string>
+    <string name="error_msg_enter_card_code">Ingrese un codigo de seguridad valido</string>
+    <string name="error_msg_enter_card_date">Ingrese una fecha de vencimiento valida</string>
+    <string name="error_msg_enter_card_name">Ingrese un nombre valido</string>
+    <string name="error_msg_invalid_card_name">El nombre de la tarjeta no corresponde al usuario</string>
+    <string name="error_msg_card_unknown">El tipo de tarjeta es desconocida</string>
+
+    <string name="success_msg_user_registered">Usuario Registrado!</string>
+    <string name="success_msg_card_registered">Tarjeta Registrada!</string>
+    <string name="success_msg_payment_registered">Pago Registrado!</string>
+
+</resources>

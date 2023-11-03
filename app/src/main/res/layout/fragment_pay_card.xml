@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    tools:context=".feature_login.presentation.fragments.LoginFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/fragment_pay_card_title"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCard"
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivCardLogo"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/visa_logo"
+                android:contentDescription="@string/fragment_pay_card_title"
+                app:layout_constraintStart_toStartOf="@id/guidelineCard1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/fragment_pay_card_number"
+                android:textColor="@color/gray"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="@id/guidelineCard1"
+                app:layout_constraintTop_toBottomOf="@+id/ivCardLogo" />
+
+            <TextView
+                android:id="@+id/tvExpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:text="@string/fragment_pay_card_expire_title"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/tvCardNumber"
+                app:layout_constraintStart_toStartOf="@+id/guidelineCard2"/>
+
+            <TextView
+                android:id="@+id/tvExpireDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_pay_expire_date"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvExpTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvExpTitle" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_pay_card_name"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpireDate"
+                app:layout_constraintTop_toTopOf="@+id/tvExpireDate"
+                app:layout_constraintStart_toStartOf="@id/guidelineCard1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.10" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tvSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="100dp"
+        android:text="@string/fragment_pay_card_money_symbol"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvCard"  />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/fragment_pay_card_balance_zero"
+        android:layout_marginStart="20dp"
+        android:inputType="numberDecimal"
+        android:textSize="60sp"
+        android:maxLength="6"
+        android:autofillHints="paymentAmount"
+        app:layout_constraintStart_toEndOf="@+id/tvSymbol"
+        app:layout_constraintTop_toTopOf="@+id/tvSymbol"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSymbol" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/fragment_pay_card_btn_pay"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:progressTint="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
